@@ -1,0 +1,4 @@
+<h1> Welcome <%= current_user.email %> </h1>
+<h1>Index</h1>
+<%= button_to "Edit This Account", edit_user_registration_path, method: :get %>
+<%= button_to "Logout", destroy_user_session_path	, method: :delete %>
